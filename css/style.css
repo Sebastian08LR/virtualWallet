@@ -87,6 +87,7 @@ h3{
     color: var(--text-color);
     padding: 0.5em 1.2em;
     border-radius: 1.5em ;
+    text-decoration: none;
 }
 .infoCard p{
   color: var(--light-secondary-color);   
@@ -116,7 +117,7 @@ h3{
     height: 100%;
     display: flex;
     justify-content: flex-start;
-    overflow: hidden;
+    overflow-x: scroll;
     column-gap: 1em;
 }
 .myCard{
