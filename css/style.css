@@ -5,3 +5,29 @@
     box-sizing: border-box;
     font-family: "SF-Pro-Text-Regular";
 }
+
+header{
+    background-color: var(--color-primary);
+    height: 8svh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5em;
+}
+
+header .icon{
+    display: flex;
+    column-gap: 1em;
+    letter-spacing: 0.3em;
+    align-items: center;
+    color: var(--color-secundary);
+    font-size: 0.7em;
+}
+header img{
+    height: 5svh;
+}
+
+h3{
+    text-transform: capitalize;
+    color: var(--color-secundary);
+}
