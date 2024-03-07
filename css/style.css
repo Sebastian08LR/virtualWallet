@@ -5,3 +5,180 @@
     box-sizing: border-box;
     font-family: "SF-Pro-Text-Regular";
 }
+
+header{
+    background-color: var(--color-primary);
+    height: 8svh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5em;
+}
+
+header .icon{
+    display: flex;
+    column-gap: 1em;
+    letter-spacing: 0.3em;
+    align-items: center;
+    color: var(--color-secundary);
+    font-size: 0.6em;
+}
+header img{
+    height: 4.5svh;
+}
+/* #region home module */
+h3{
+    text-transform: capitalize;
+    color: var(--color-secundary);
+}
+
+.banner {
+    padding: 1em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bannerHeader{
+    width: 90%;
+    padding-bottom: 0.5em;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    width: 90%;
+    max-width: 360px;
+    height: 18svh;
+    box-shadow: 0 0 50px 0 rgba(51, 64, 79, 0.15);
+    border-radius: 20px;
+}
+
+.card img{
+    height: 80px;
+    padding-left: 1em;
+    padding: 0 2.5 0 0;
+    z-index: 1;
+}
+
+.card .circle{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: var(--light-primary-color);
+    left: -35%;
+}
+
+.infoCard {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.8em;
+    padding-left: 14vw;
+    font-size: 2svh;
+    row-gap: 0.4em;
+}
+
+.infoCard a{
+    background-color: var(--color-primary);
+    margin: 0.5em 0;
+    width: 90%;
+    font-weight: 600;
+    font-size: 10px;
+    color: var(--text-color);
+    padding: 0.9em 2.5em;
+    border-radius: 1.5em ;
+    text-decoration: none;
+}
+.infoCard p{
+  color: var(--light-secondary-color);   
+}
+
+#closeIcone{
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+    height: 4svh;
+}
+
+.main{
+    height: 55svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 5%;
+}
+
+.mainHeader{
+    padding: 1em 0;
+    width: 90%;
+}
+
+.cards{
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    column-gap: 1em;
+}
+.myCard{
+   flex: 0 0 auto;
+   display: grid;
+   align-items: center;
+   justify-items: center;
+   height: 100%;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(3, 1fr);
+   color: var(--text-color); 
+}
+
+.myCard .card-img{
+    height: 100%;
+    z-index: -1;
+    grid-area: 1 / 1 / 4 / 4;
+}
+
+.myCard p{
+    grid-area:  1 / 3 / span 1 / span 1;
+    justify-self: start;
+}
+
+.myCard h2{
+    grid-area: 2 / 1 / span 1 / span 3;
+    align-self: center;
+    justify-self: center;
+}
+
+.myCard .card-logo{
+    grid-area: 3 / 1 /span 1 / span 2;
+    justify-self: start;
+    padding-left: 1em;
+}
+
+/* #endregion home module */
+nav{
+    background-color: var(--color-secundary);
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+}
+
+nav > ul{
+    list-style-type: none;
+    display: flex;
+    height: 8vh;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav > ul > li{
+    list-style: none;
+}
+nav > ul > li > a{
+    text-decoration: none;
+}
+nav > ul > li > a > img{
+    height: 5vh;
+}
