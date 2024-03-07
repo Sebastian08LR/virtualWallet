@@ -5,28 +5,7 @@
     box-sizing: border-box;
     font-family: "SF-Pro-Text-Regular";
 }
-
-header{
-    background-color: var(--color-primary);
-    height: 8svh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 1.5em;
-}
-
-header .icon{
-    display: flex;
-    column-gap: 1em;
-    letter-spacing: 0.3em;
-    align-items: center;
-    color: var(--color-secundary);
-    font-size: 0.6em;
-}
-header img{
-    height: 4.5svh;
-}
-
+/* #region home module */
 h3{
     text-transform: capitalize;
     color: var(--color-secundary);
@@ -68,15 +47,15 @@ h3{
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    background-color: var(--color-primary);
-    left: -30%;
+    background-color: var(--light-primary-color);
+    left: -35%;
 }
 
 .infoCard {
     display: flex;
     flex-direction: column;
     padding-top: 1.8em;
-    padding-left: 6svh;
+    padding-left: 14vw;
     font-size: 2svh;
     row-gap: 0.4em;
 }
@@ -156,3 +135,5 @@ h3{
     justify-self: start;
     padding-left: 1em;
 }
+
+/* #endregion home module */
