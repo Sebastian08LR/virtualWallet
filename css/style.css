@@ -36,5 +36,38 @@ header img{
 
 h3{
     text-transform: capitalize;
-    color: var(--color-secundary);
+    color: var(--text-color);
+}
+
+.banner{
+    padding: 2em;
+    color: var(--text-color);
+    display: grid;
+    grid-template-columns: repeat(2, minmax(50px, 1fr));
+    grid-template-rows: repeat(6,1fr);
+    grid-template-areas: 
+    "welcome welcome welcome"
+    "message message message"
+    "balance balance balance";
+    row-gap: 1em;
+}
+
+.banner > h1 {
+    font-size: 32px;
+    font-weight: 900;
+    grid-area: welcome;
+}
+
+.banner > p{
+    grid-area: message;
+}
+
+.banner > section{
+    display: flex;
+    grid-area: balance;
+}
+.banner > section > article{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 5em;
 }
