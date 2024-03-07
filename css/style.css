@@ -6,8 +6,14 @@
     font-family: "SF-Pro-Text-Regular";
 }
 
+#prfile-section{
+ background-color: var(--color-secundary);
+ background-image: url(../storage/img/background-texture.svg);   
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
 header{
-    background-color: var(--color-primary);
     height: 8svh;
     display: flex;
     justify-content: space-between;
@@ -20,11 +26,12 @@ header .icon{
     column-gap: 1em;
     letter-spacing: 0.3em;
     align-items: center;
-    color: var(--color-secundary);
+    color: var(--text-color);
     font-size: 0.7em;
 }
 header img{
     height: 5svh;
+    filter: brightness(100%);
 }
 
 h3{
