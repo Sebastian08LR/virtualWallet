@@ -5,3 +5,42 @@
     box-sizing: border-box;
     font-family: "SF-Pro-Text-Regular";
 }
+
+.balance{
+    display: flex;
+    padding-top: 8svh ;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.balance > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    height: 30svh;
+    width: 30svh;
+    background-color: var(--color-primary);
+}
+
+.balance > div > h2{
+    width: 50%;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.middleNav {
+    display: flex;
+    padding: 5svh 0;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.middleNav > a{
+    text-decoration: none;
+    padding: 0.7em 1.5em;
+    background-color: var(--color-primary);
+    border-radius: 2em;
+}
