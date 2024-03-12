@@ -11,6 +11,7 @@
  background-image: url(../storage/img/background-texture.svg);   
  background-repeat: no-repeat;
  background-size: cover;
+ height: 50svh;
 }
 
 header{
@@ -44,7 +45,7 @@ h3{
     color: var(--text-color);
     display: grid;
     grid-template-columns: repeat(2, minmax(50px, 1fr));
-    grid-template-rows: repeat(6,1fr);
+    grid-template-rows: repeat(3,0.5fr);
     grid-template-areas: 
     "welcome welcome welcome"
     "message message message"
@@ -69,5 +70,117 @@ h3{
 .banner > section > article{
     display: grid;
     grid-template-rows: repeat(3, 1fr);
-    row-gap: 5em;
+    row-gap: 2em;
+}
+
+.balance_bar{
+    height: 5px;
+    width: 35vw;
+    margin-top: 1svh;
+    background-color: var(--text-color);
+    border-radius: 15px;
+}
+
+#progressBar__1{
+    height: 5px;
+    border-radius: 15px;
+    background-color: var( --primary-color);
+    width: 80%;
+}
+
+#progressBar__2{
+    height: 5px;
+    border-radius: 15px;
+    background-color: var( --primary-color);
+    width: 30%;
+}
+
+.profile_content{
+    background-color: #fff;
+    padding: 5svh 0 0 0;
+    border-radius:  2rem 2rem 0 0;
+    height: 40svh;
+    width: 100vw;
+}
+
+.profile_content h3{
+     background-color: transparent;
+     color: var(--color-secundary);
+     padding: 0 2vh 0 2vh;
+}
+
+.activities{
+    display: flex;
+    justify-content: space-around;
+    padding: 0.8em 0 1em 0;
+}
+
+.activities article{
+    background-color: var(--text-color);
+    border-radius: 1em;
+    padding: 2em 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-secundary);
+    font-weight: bold;
+    box-shadow: 0 0 50px 0 rgba(51, 64, 79, 0.15);
+}
+
+.activities article img{
+    width: 60px;
+}
+
+.transactions{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 22svh;
+}
+
+.transactions article{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    padding: 1em 1em;
+}
+
+.transactions > article > img{
+    grid-area: 1 / 1 / span 2 / span 1;
+    height: 40px;
+    justify-self: center;
+    align-self: center;
+}
+
+.transactions > article > p{
+    grid-area: 1 / 2  span 1 / span 6;
+}
+
+.transactions > article > small{
+     grid-area: 2 / 2 / span 1 / span 6;
+}
+.menu{
+    background-color: var(--color-secundary);
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+}
+
+.menu > ul{
+    list-style-type: none;
+    display: flex;
+    height: 8vh;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.menu > ul > li{
+    list-style: none;
+}
+.menu > ul > li > a{
+    text-decoration: none;
+}
+.menu > ul > li > a > img{
+    height: 5vh;
 }
