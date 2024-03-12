@@ -7,7 +7,20 @@
     --color-secundary: #33404F;
     --light-primary-color: #E1FFEF;
     --secondary-color: #33404F;
+    --light-secondary-color: #5e7ca0a9;
+    --text-color: #fff;
+    --primary-color: #00DDA3;
+    --light-primary-color: #E1FFEF;
+    --secondary-color: #33404F;
     --light-secondary-color: #33404f7E;
     --text-color: #fff;
+    /* custom colors */
+    --cs-primary-background-color: #212121;
+    --cs-secondary-background-color: #6a5cbd;
+    --cs-secondary-color: #303030;
+    --cs-primary-text: #ffffff;
+    --cs-secondary-text: #3c04c0;
+    --cs-accent-color: #ffd700;
+    --cs-button-color: #4caf50;
 }
 
